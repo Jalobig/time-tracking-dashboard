@@ -1,0 +1,13 @@
+.button{
+    position: relative;
+    border: none;
+    font-family: inherit;
+    background-color: transparent;
+    color: var(--color-blue);
+    font-size: 1rem;
+    transition: all .3s;
+    &:hover{
+        cursor: pointer;
+        color: white;
+    }
+}

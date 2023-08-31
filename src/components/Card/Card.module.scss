@@ -1,0 +1,74 @@
+.card {
+  overflow: hidden;
+  border-radius: 1rem;
+  width: 15.625rem;
+  @media only screen and (max-width: 546px) {
+    max-width: 90%;
+    width: 90%;
+  }
+  &__bg {
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+    margin-top: -1rem;
+    height: 5rem;
+    img {
+      width: 5rem;
+      object-fit: scale-down;
+    }
+  }
+  &__info {
+    position: relative;
+    background-color: var(--color-blue-dark);
+    padding: 1.875rem;
+    border-radius: 1rem;
+    margin-top: -1rem;
+    z-index: 10;
+    transition: all 0.3s;
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-blue-highlight);
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  &__mobilerow {
+    @media only screen and (max-width: 546px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.3rem;
+    }
+  }
+  &__heading {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  &__button {
+    border: none;
+    background-color: transparent;
+    transition: all 0.3s;
+    &:hover {
+      cursor: pointer;
+      transform: scaleX(1.2);
+      filter: brightness(120%);
+    }
+  }
+  &__current {
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    @media only screen and (max-width: 546px) {
+      margin: 0;
+      font-size: 2rem;
+    }
+  }
+  &__previous {
+    font-size: 0.9rem;
+    color: var(--color-blue-light);
+  }
+}
